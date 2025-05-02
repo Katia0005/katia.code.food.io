@@ -1,0 +1,534 @@
+@font-face {
+  font-family: 'EdgeCutting';
+  src: url('fonts/EdgecuttingLiteMedium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('fonts/BebasNeue-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* added fonts to my code*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0c0c0c;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* changed the background colour for my homepage and fixed sizing*/
+
+.menu-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  z-index: 1000;
+}
+
+/* did header for my website in homepage*/
+
+
+.left-button img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.right-image-button img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* added images of my sushishi logo and the cart button*/
+
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-family: 'EdgeCutting', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.nav-button:hover {
+  color: #f70202;
+}
+
+/* changed the font of the header options and made a hover effect*/
+
+
+.sushi-title {
+  background-color: #0c0c0c;
+  padding: 80px 80px;
+  text-align: left; 
+}
+
+.sushi-title .line {
+  font-size: 380px;
+  letter-spacing: 50px;
+  font-family: 'BebasNeue';
+  font-weight: normal;
+  line-height: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sushi-title .red {
+  color: #e31b1b;
+}
+
+.sushi-title .yellow {
+  color: #ffde04;
+}
+
+/* in my homepage i made text of the name of my website and made the "i" yellow*/
+
+.sushi-title .underline {
+  width: 90%;
+  height: 3px;
+  background-color: #ffde04;
+  margin: 40px auto 0;
+}
+
+/* underlines are added to have like a page break and for style*/
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h2 {
+  color: #e31b1b;
+  font-family: 'BebasNeue';
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-family: 'EdgeCutting';
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* here i got done the about section like the aligment and space while doing the title and paragrapgh about my sushi website colours and fonts were done accordingly
+*/
+
+
+.seasonal-section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.seasonal-section h2 {
+  color: #e31b1b;
+  font-family: 'BebasNeue';
+  font-size: 100px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.seasonal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.seasonal-item {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.seasonal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.seasonal-section .underline {
+  width: 90%;
+  height: 3px;
+  background-color: #ffde04;
+  margin: 40px auto 0;
+}
+
+/* this is the sushi seasonal section to show the most new sushi*/
+
+.contact-section {
+  color: white;
+  padding: 60px 80px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contact-text h2 {
+  font-size: 48px;
+  font-family: 'BebasNeue';
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 16px;
+  color: #ccc;
+  font-family: 'EdgeCutting';
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.contact-button {
+  background-color: #e31b1b;
+  color: white;
+  font-family: 'EdgeCutting';
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+
+.contact-button:hover {
+  background-color: #6d0000;
+}
+
+.contact-button:active {
+  background-color: yellow; 
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  font-family: 'EdgeCutting';
+}
+
+.footer-center label,
+.footer-right label {
+  display: block;
+  font-family: 'EdgeCutting';
+  margin-bottom: 10px;
+}
+
+.footer-center input {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #e31b1b;
+  color: white;
+  outline: none;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right li {
+  margin-bottom: 5px;
+}
+
+/* menu was done with changing paddings and info and images were added and footer was fixed */
+
+.menu-hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* menu header was put*/
+
+.menu-category-buttons {
+  margin-top: 40px;
+  display: flex;
+  font-family: 'EdgeCutting';
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.menu-category-buttons a {
+  background-color: #e31b1b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-category-buttons a:hover {
+  background-color: #6d0000;
+}
+
+/* catefory buttons were added and while hovering it changes colour*/
+
+.menu-carousel {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.menu-carousel .underline {
+  width: 90%;
+  height: 3px;
+  background-color: #ffde04;
+  margin: 40px auto 0;
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.carousel-item {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #ffde04;
+  overflow: hidden;
+  margin-left: 65px;
+}
+
+.carousel-item img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: 1px solid #e31b1b;
+  color: white;
+  font-size: 20px;
+  padding: 5px 12px;
+  cursor: default;
+  border-radius: 2px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #e31b1b;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.cart-section {
+  padding: 120px 80px 60px;
+  color: white;
+}
+
+.cart-section h2 {
+  font-size: 50px;
+  font-family: 'EdgeCutting';
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  gap: 40px;
+}
+
+.item-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  flex: 1;
+}
+
+.quantity-box {
+  border: 2px solid #e31b1b;
+  padding: 14px 22px;
+  font-size: 22px;
+  font-family: 'Edgecutting';
+  color: white;
+}
+
+.item-details .item-name {
+  font-size: 24px;
+  font-family: 'Edgecutting';
+  margin: 0;
+}
+
+.item-details .item-price {
+  color: #ccc;
+  font-size: 20px;
+  font-family: 'Edgecutting';
+  margin-top: 10px;
+}
+
+.item-thumbnail img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #ffde04;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.checkout-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.checkout-button {
+  background-color: #e31b1b;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: 'Edgecutting';
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.checkout-button:hover {
+  background-color: #6d0000;
+}
+
+.checkout-button:active {
+  background-color: yellow;
+  transition:0.3s ease;
+
+}
+
+
+/*did a fake clickable  button in cart page for the "go to checkout" button*/
+
+.cart-section .underline {
+  height: 2px;
+  background-color: #ffde04;
+  margin: 60px auto;
+  width: 90%;
+}
+
+.cart-section h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: 'Edgecutting';
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr, minmax(10px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.recommended-grid img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  border-radius: 8px;
+  margin: 65px;
+}
+
+
+
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* fixed recommended section with doing a grid and sectioning them where they should be */
+
+
+/* for today do carousal like how boost strap is. add you images colum in the code so it can connect add add images that will slide. 
