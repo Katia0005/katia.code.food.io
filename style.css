@@ -220,27 +220,30 @@ body {
 }
 
 .contact-text h2 {
-  font-size: 48px;
+  font-size: 100px;
   font-family: 'BebasNeue';
   color: white;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact-text p {
   font-size: 16px;
   color: #ccc;
   font-family: 'EdgeCutting';
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .contact-button {
   background-color: #e31b1b;
   color: white;
   font-family: 'EdgeCutting';
+  margin-left: 90px;
   padding: 12px 24px;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 15px;
   cursor: pointer; 
   transition: background-color 0.3s ease;
 }
@@ -352,23 +355,25 @@ body {
 
 .carousel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
 .carousel-item {
-  width: 300px;
   aspect-ratio: 1 / 1;
   border: 2px solid #ffde04;
   overflow: hidden;
-  margin-left: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
 .carousel-item img {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 
@@ -517,6 +522,7 @@ body {
   width: 300px;
   height: 300px;
   display: block;
+  border: 2px solid #ffde04;
   border-radius: 8px;
   margin: 65px;
 }
@@ -531,4 +537,225 @@ body {
 /* fixed recommended section with doing a grid and sectioning them where they should be */
 
 
-/* for today do carousal like how boost strap is. add you images colum in the code so it can connect add add images that will slide. 
+/* for today do carousal like how boost strap is. add you images colum in the code so it can connect add add images that will slide. */
+
+
+.delivery-image {
+  height: 70vh;
+  overflow: hidden;
+}
+
+.delivery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.delivery-options {
+  padding: 30px 20px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: 'EdgeCutting';
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+input[type="text"] {
+  width: 280px;
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid #ffde04;
+  color: white;
+  font-size: 16px;
+  font-family: 'EdgeCutting';
+}
+
+
+input[type="text"]::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-left: auto;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e31b1b;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.toggle input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.checkout-details {
+  padding: 40px 30px;
+  color: white;
+  font-family: 'Edgecutting';
+}
+
+.checkout-input {
+  margin-bottom: 20px;
+}
+
+.checkout-input label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.checkout-input input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #ffde04;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.checkout-summary {
+  margin-top: 30px;
+}
+
+.checkout-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.total-row {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.order-button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.order-button {
+  background-color: #e31b1b;
+  color: white;
+  border: none;
+  padding: 16px 60px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Edgecutting';
+}
+
+.order-button:hover {
+  background-color: #6d0000;
+}
+
+.item-page {
+  color: white;
+  padding: 60px 40px;
+  font-family: 'Edgecutting', sans-serif;
+  margin-top: 10%;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.item-info {
+  max-width: 500px;
+}
+
+.tag {
+  display: inline-block;
+  border: 2px solid #e31b1b;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.item-title {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.item-description {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.item-price {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.select-button {
+  background-color: #e31b1b;
+  color: white;
+  border: none;
+  padding: 14px 50px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Edgecutting', sans-serif;
+}
+
+.item-image img {
+  width: 300px;
+  height: auto;
+  border: 2px solid #ffde04;
+  object-fit: cover;
+  display: block;
+}
+
+.item-underline {
+  width: 90%;
+  height: 2px;
+  background-color: #ffde04;
+  margin: 60px auto 0;
+}
+
