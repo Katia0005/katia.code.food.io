@@ -205,6 +205,7 @@ body {
 .contact-section {
   color: white;
   padding: 60px 80px;
+  padding-left: 4%;
 }
 
 .contact-content {
@@ -236,6 +237,7 @@ body {
   margin-bottom: 50px;
   line-height: 1.5;
   text-align: center;
+
 }
 
 .contact-button {
@@ -431,6 +433,7 @@ body {
   font-size: 50px;
   font-family: 'EdgeCutting';
   margin-bottom: 20px;
+  padding-left: 10%;
 }
 
 .cart-item {
@@ -523,6 +526,7 @@ body {
   margin-bottom: 20px;
   font-family: 'Edgecutting';
   padding-top: 2%;
+  padding-left: 11%;
 }
 
 .recommended-grid {
@@ -645,6 +649,7 @@ input[type="text"]::placeholder {
   border-radius: 50%;
 }
 
+
 .toggle input:checked + .slider:before {
   transform: translateX(24px);
 }
@@ -716,11 +721,18 @@ input[type="text"]::placeholder {
   background-color: #6d0000;
 }
 
+.order-button:active {
+  background-color: yellow;
+  transition:0.3s ease;
+}
+
+
 .item-page {
   color: white;
   padding: 60px 40px;
   font-family: 'Edgecutting', sans-serif;
   margin-top: 10%;
+  padding-left: 6%;
 }
 
 .item-content {
@@ -729,6 +741,7 @@ input[type="text"]::placeholder {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+  padding-right: 4%;
 }
 
 .item-info {
@@ -784,4 +797,37 @@ input[type="text"]::placeholder {
   background-color: #ffde04;
   margin: 60px auto 0;
 }
+
+#popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  }
+
+
+ /*made background blur*/
+
+.hidden {
+  display: none !important;
+}
+
+#popup-content {
+  background: #000;
+  border: 5px solid yellow;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* made pop up for when clicking order button you get a thank you pop*/
+
 

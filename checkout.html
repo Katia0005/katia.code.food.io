@@ -45,23 +45,44 @@
 </div>
 
 <div class="checkout-details">
-    <div class="checkout-input">
+  <div class="checkout-input">
     <label for="when">when</label>
     <input type="text" id="when" placeholder="">
-    </div>
-    <div class="checkout-input">
+  </div>
+  <div class="checkout-input">
     <label for="payment">payment</label>
     <input type="text" id="payment" placeholder="">
-    </div>
-    <div class="checkout-summary">
+  </div>
+  <div class="checkout-summary">
     <div><span>Item subtotal</span><span>£23.00</span></div>
     <div><span>Service fee</span><span>£1.21</span></div>
     <div><span>Delivery</span><span>£1.99</span></div>
     <div class="total-row"><span>Total</span><span>£26.20</span></div>
-    </div>
-    <div class="order-button-wrapper">
-    <button type="button" class="order-button">order</button>
-    </div>
+  </div>
+  <div class="order-button-wrapper">
+    <button class="order-button" onclick="showPopup()">Order</button>
+  </div>
 </div>
+
+<div id="popup-modal" class="hidden">
+  <div id="popup-content">
+    <img src="https://media.tenor.com/S3UL-ZY1rJ4AAAAj/thank.gif" alt="Thank You" />
+  </div>
+</div> 
+
+<script>
+  function showPopup() {
+    const popup = document.getElementById("popup-modal");
+    popup.classList.remove("hidden");
+    void popup.offsetWidth; 
+    setTimeout(() => {
+      popup.classList.add("hidden");
+    }, 3000);
+  }
+</script>
+
+
+
 </body>
 </html>
+
